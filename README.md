@@ -81,6 +81,7 @@ inspect > sources > page more option button > snippets > New Snippets > write pr
     <p></p>
     <div></div>
     <script src="index.js"></script>
+    <script src="index1.js"></script>
 </body>
 </html>
 ```
@@ -88,3 +89,116 @@ inspect > sources > page more option button > snippets > New Snippets > write pr
 alert("ali banat");
 ```
 
+### keyword data type & comment
+
+*data type
+
+open live server > inspect > console > typeof("Ali Banat");=string > typeof(1234);=number > typeof(true);=bulean > ok
+
+*comment
+
+* // single line
+*   /* </br> 
+    DOUBLE </br>
+     LINE </br> 
+    */
+
+*use string for </br> tag
+
+    `document.write("ali</br>");`
+
+### declare variable
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name,age,id;
+        name="ali banat</br>";
+        age= "24</br>";
+        id=18102041;
+        document.write(name);
+        document.write(age);
+        document.write(id);
+    </script>
+</body>
+</html>
+```
+### number method
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id=18102054;
+        console.log(typeof(id));
+        id=toString(id);
+        console.log(typeof(id));
+        id=parseInt(id);
+        console.log(typeof(id));
+        id="22.5";
+        console.log(typeof(id));
+        id = parseFloat(id);
+        console.log(typeof(id));
+    </script>
+</body>
+</html>
+```
+### round figure or 1/2/3/as you wish after do.t ".toFix();"
+
+```css
+var num=13.5434;
+
+console.log(num.toFixed());
+```
+
+*answer will ber 14 round figure. </br>
+
+if the num is 13.40 less than half then it would be </br>
+
+*answer will be 13 round figure.
+
+```js
+var num=13.49;
+
+console.log(num.toFixed(2));
+```
+<img src="./images/roundfiguredecimal.png"/>
+
+### include integer number roundfigure to show number i want
+
+```js
+var number=2.34234;
+
+console.log(number.toPrecision(3));
+```
+<img src="./images/includeintegerdecimal.png"/>
+
+### number
+
+```js
+var num=2.34234;
+
+console.log(num.toPrecision(3));
+
+console.log(typeof(Number("123")));
+console.log(typeof(Number("12.55")));
+
+console.log(Number("     12.5       "));
+
+console.log(Number(true));
+console.log(Number(false));
+```
+<img src="./images/number.png"/>
