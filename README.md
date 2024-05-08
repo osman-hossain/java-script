@@ -202,3 +202,35 @@ console.log(Number(true));
 console.log(Number(false));
 ```
 <img src="./images/number.png"/>
+
+### concatenate
+
+`document.write("ali"+" banat" + " khan");`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Ali"+" Banat" + " khan</br>");
+        var firstName="Ali",lastName=" Ubaida</br>";
+        var fullName=firstName+lastName;
+        document.write("my name is "+fullName);
+        var fullName="hamza ali";
+        document.write(fullName+" is my name</br>");
+
+        document.write("my name is "+fullName+" khan</br>");
+        var num1= 20,num2="30 </br>";
+        document.write("Num 1 = "+num1 + " Num 2 = "+num2);
+        var name="Raihan Kadri";
+        document.write(name);
+    </script>
+</body>
+</html>
+```
+<img src="./images/addstring.png"/>
