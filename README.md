@@ -234,3 +234,35 @@ console.log(Number(false));
 </html>
 ```
 <img src="./images/addstring.png"/>
+
+### length
+
+```html
+<script>
+    var name="ahasan khan"
+    var len=name.length;
+    document.write("The total number of text is : "+len+"</br>");
+    document.write("Total length of text is : "+name.length);
+</srcript>
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length</title>
+</head>
+<body>
+    <h1> Length </h1>
+    <script>
+        var name="rahman ali";
+       var len= name.length;
+       document.write("Number of charecter : "+len+"</br>");
+       document.write("Number of length = "+ name.length);
+    </script>
+</body>
+</html>
+```
+<img src="./images/length.png"/>
+
