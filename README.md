@@ -486,3 +486,219 @@ x -=6; x = x - 6; </br>
         document.write("Fahrenheit : "+fahrenheit);
     </script>
 ```
+### Relational Operator
+
+* > , >= , < , <= , == , === , !== , !===
+
+### Logical Operator
+
+* && , || , !
+
+### relational operator
+
+== > check variable equal only ex. 20==20 true </br>
+== > check varible equal only ex. 20=="20" true </br> 
+=== > check variable and data type equal both ex. 20==="20" false </br>
+
+`console.log(num1>num2 && num1>num3)`
+
+`console.log(!(25<20));` true </br>
+`console.log(!(25<29));` false </br>
+
+### if else
+
+```js
+var num=prompt("Enter the number to find odd or even : ");
+if(num%2==0)
+    console.log("Even");
+
+if(num%2!=0)
+    console.log("odd");
+```
+```js
+var num = prompt("Enter the number : ");
+
+if(num%2==0)
+    console.log("Even");
+else
+    console.log("Odd");
+```
+### Grading System javascript
+
+```js
+var marks = prompt("Enter Marks : ");
+
+if(marks<33)
+    {
+    console.log("Fail");
+    document.write("Letter Grade = F </br>")
+    document.write("Grade Point = 0");
+    }
+else if(marks<40)
+    {
+        console.log("D");
+        document.write("Letter Grade = D </br>");
+        document.write("Grade Point = 1");
+    }
+else if(marks<50)
+    {
+        console.log("C");
+        document.write("Letter Grade : C </br>");
+        document.write("Grade Point = 2");
+    }
+else if(marks<60)
+    {
+        console.log("B");
+        document.write("Letter Grade = B </br>");
+        document.write("Grade Point = 3");
+    }
+else if(marks<70)
+    {
+        console.log("A-");
+        document.write("Letter Grade = A- </br>");
+        document.write("Grade Point = 3.5");
+    }
+else if(marks<80)
+    {
+        console.log("A");
+        document.write("Letter Grade = A </br>")
+        document.write("Grade Point = 4 ");
+    }
+else if(marks<=100)
+    {
+        console.log("A+");
+        document.write("Letter Grade = A+ </br>");
+        document.write("Grade Point = 5");
+    }
+    else
+    {
+        console.log("Error");
+        document.write("incorrent number please give numbers 1 to 100");
+    }
+```
+### positive negetive and zero
+
+```js
+var num = prompt("Enter number : ");
+
+if(num<0)
+    console.log("Negetive");
+else if(num>0)
+    console.log("Positive");
+else
+console.log("zero");
+```
+
+### using logical operator
+
+```js
+var marks = prompt("Enter Marks : ");
+
+if(marks<=32 && marks>=0)
+    {
+    console.log("Fail");
+    document.write("Letter Grade = F </br>")
+    document.write("Grade Point = 0");
+    }
+else if(marks<=39 && marks>=33)
+    {
+        console.log("D");
+        document.write("Letter Grade = D </br>");
+        document.write("Grade Point = 1");
+    }
+else if(marks<49 && marks>=40)
+    {
+        console.log("C");
+        document.write("Letter Grade : C </br>");
+        document.write("Grade Point = 2");
+    }
+else if(marks<=59 && marks>=50)
+    {
+        console.log("B");
+        document.write("Letter Grade = B </br>");
+        document.write("Grade Point = 3");
+    }
+else if(marks<=69 && marks>=60)
+    {
+        console.log("A-");
+        document.write("Letter Grade = A- </br>");
+        document.write("Grade Point = 3.5");
+    }
+else if(marks<=79 && marks>=70)
+    {
+        console.log("A");
+        document.write("Letter Grade = A </br>")
+        document.write("Grade Point = 4 ");
+    }
+else if(marks<=100 && marks>=80)
+    {
+        console.log("A+");
+        document.write("Letter Grade = A+ </br>");
+        document.write("Grade Point = 5");
+    }
+    else
+    {
+        console.log("Error");
+        document.write("incorrent number please give numbers 1 to 100");
+    }
+```
+```js
+    else if(marks<0 || marks>100)
+    {
+        console.log("Error");
+        document.write("incorrent number please give numbers 1 to 100");
+    }
+```
+
+### Maximum number
+
+```js
+//maximum number from three value
+
+var num1 = prompt("Enter number one : ");
+var num2 = prompt("Enter number two : ");
+var num3 = prompt("Enter number three : ");
+var num4 = prompt("Enter number four : ");
+
+if (num1>num2 && num1>num3 && num1>num4)
+    {
+        console.log("number "+num1);
+        document.write("maximum is "+num1+" number ");
+    }
+else if(num2>num1 && num2>num3 && num2>num4)
+    {
+        console.log("number "+num2);
+        document.write("maximum is "+num2+" number ");
+    }
+else if(num3>num1 && num3>num2 && num3>num4)
+    {
+        console.log("number "+num3);
+        document.write("maximum is "+num3+" number ");
+    }
+    else
+    {
+        console.log("number "+num4);
+        document.write("maximum numbre is : "+ num4);
+    }
+```
+### Vowel Consonent
+
+```js
+// write a javaScript programme that print vowel or consonent
+var alphabet = prompt("Enter alphabet : ");
+
+//alphabet = alphabet.toLowerCase(); 
+
+if(alphabet=='a' || alphabet=='e'|| alphabet=='i'|| alphabet=='o'|| alphabet=='u' ||
+alphabet=='A' || alphabet=='E'|| alphabet=='I'|| alphabet=='O'|| alphabet=='U')
+    {
+        console.log("vowel");
+        document.write("vowel");
+    }
+
+    else
+    {
+        console.log("consonent");
+        document.write("consonent");
+    }
+```

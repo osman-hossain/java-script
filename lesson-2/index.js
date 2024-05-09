@@ -1,12 +1,16 @@
-var num=2.34234;
+// write a javaScript programme that print vowel or consonent
+var alphabet = prompt("Enter alphabet : ");
 
-console.log(num.toPrecision(3));
+alphabet = alphabet.toLowerCase();
 
-console.log(typeof(Number("123")));
-console.log(typeof(Number("12.55")));
+if(alphabet=='a' || alphabet=='e'|| alphabet=='i'|| alphabet=='o'|| alphabet=='u')
+    {
+        console.log("vowel");
+        document.write("vowel");
+    }
 
-console.log(Number("     12.5       "));
-
-console.log(Number(true));
-console.log(Number(false));
-
+    else
+    {
+        console.log("consonent");
+        document.write("consonent");
+    }
