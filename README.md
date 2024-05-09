@@ -429,3 +429,60 @@ x -=6; x = x - 6; </br>
 ```
 <img src="./images/Task1.png"/>
 
+### area of square/reactangle Float
+
+```html
+    <script>
+        var base = parseFloat(prompt("Enter Base : "));
+        var height = parseFloat(prompt("Enter Height : "));
+
+        var area = base * height;
+
+        document.write("Area of Triangle = "+area);
+    </script>
+```
+### integer
+
+```html
+    <script>
+        var base = parseInt(prompt("Enter Base : "));
+        var height = parseInt(prompt("Enter Height : "));
+
+        var area = base * height;
+
+        document.write("Area = "+area);
+    </script>
+```
+
+### area of triangle
+
+```html
+    <script>
+        var base = parseFloat(prompt("Enter Base : "));
+        var height = parseFloat(prompt("Enter Height : "));
+
+        var areaoftriangle = (base * height)/2;
+
+        document.write("Area = "+areaoftriangle);
+    </script>
+```
+### tempareture converter
+
+### Fahrenheit to Celsius
+
+```html
+    <script>
+        var fahrenheit = parseFloat(prompt("Enter the fahrenheit number : "));
+        var celsius = (fahrenheit-32)*(5/9);
+        document.write("celsius value is : "+celsius);
+    </script>
+```
+### Celsius to Fahrenheit
+
+```html
+    <script>
+        var celsius=parseFloat(prompt("Enter the celsius value : "));
+        fahrenheit= (celsius*(9/5))+32;
+        document.write("Fahrenheit : "+fahrenheit);
+    </script>
+```
