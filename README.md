@@ -266,3 +266,166 @@ console.log(Number(false));
 ```
 <img src="./images/length.png"/>
 
+### input name print length using "prompt"+UpperCase+LowerCase+input+selctspecific
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("Enter your name : ");
+        document.write("Total Length : "+name.length+"</br>");
+        document.write(name+"</br>");
+        var name="ali jafar";
+        document.write(name.charAt(2)+"</br>");
+
+        var country = "banglaDESH";
+        country=country.toUpperCase();
+        document.write(country+"</br>");
+        var count = "rahman the good man and wise",ali = "DUblin";
+        var cunt=count.toLowerCase();
+        document.write(cunt+"</br");
+        document.write(ali);
+    </script>
+    
+</body>
+</html>
+```
+<img src="./images/input.png"/>
+### adjust and cut words "concat" "slice"
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text1="Bangladesh";
+        var text2="is a beautifull country</br>";
+        document.write(text1.concat(text2));
+        var text = "DUBlin</br>";
+        var name= text.slice(0, 3);
+        document.write(name+"</br>");
+        var name1 = text.slice(3, 6);
+        document.write(name1);
+    </script>
+</body>
+</html>
+```
+<img src="./images/adjustdivide.png"/>
+
+### practice
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>practice</title>
+    </head>
+    <body>
+        <script>
+            var firstname=prompt("Enter first name : ");
+            document.write(firstname+"</br>");
+            var lastname=prompt("Enter the last name : ");
+            document.write(lastname+"</br>");
+            document.write(firstname.concat(lastname+"</br>"));
+            document.write(firstname+" "+lastname+"</br>");
+            var fullname=firstname+" "+lastname;
+            document.write("Total length is : "+fullname.length+"</br>");
+            document.write(fullname.toUpperCase());
+            document.write("</br>")
+            document.write(fullname.toLowerCase());
+            document.write("</br>");
+            document.write(fullname.charAt(1));
+        </script>
+    </body>
+</html>
+```
+<img src="./images/practice.png"/>
+
+### practice
+
+### arithmatic operator
+
+<ol>
+<li> +
+<li> -
+<li> /
+<li> *
+<li> ++
+<li> --
+<li> %
+<li> **(power)
+</ol>
+
+### assignment operator
+
+<ol>
+<li> +=
+<li> -=
+<li> /=
+<li> *=
+<li> %=
+<li> **=
+</ol>
+
+x +=6; x = x + 6; </br>
+x -=6; x = x - 6; </br>
+
+### integer a number
+
+`name = parseInt(num1, 10);`
+
+### Task 1
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1=prompt("Enter the first number : ");
+        var num2=prompt("Enter the second number : ");
+
+        num1=parseInt(num1, 10);
+        num2=parseInt(num2, 10);
+
+        var sum,sub,mul,div,rem;
+
+        sum=num1+num2;
+        sub=num1-num2;
+        mul=num1*num2;
+        div=num1/num2;
+        rem=num1%num2;
+        
+        document.write("sum = "+sum+"</br>");
+        document.write("subtraction = "+sub+"</br>");
+        document.write("multiply = "+mul+"</br>");
+        document.write("divided = "+div+"</br>");
+        document.write("remainder = "+rem+"</br></br>");
+
+        document.write(num1 + " + " + num2 + " = " + sum + "</br>");
+        document.write(num1 + " - " + num2 + " = " + sub + "</br>");
+        document.write(num1 + " x " + num2 + " = " + mul + "</br>");
+        document.write(num1 + " / " + num2 + " = " + div + "</br>");
+        document.write(num1 + " % " + num2 + " = " + rem + "</br>");
+    </script>
+</body>
+</html>
+```
+<img src="./images/Task1.png"/>
+

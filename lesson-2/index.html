@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Length</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1> Length </h1>
     <script>
-        var name="rahman ali";
-       var len= name.length;
-       document.write("Number of charecter : "+len+"</br>");
-       document.write("Number of length = "+ name.length);
+        var num1=prompt("Enter the first number : ");
+        var num2=prompt("Enter the second number : ");
+
+        num1=parseInt(num1, 10);
+        num2=parseInt(num2, 10);
+
+        var sum,sub,mul,div,rem;
+
+        sum=num1+num2;
+        sub=num1-num2;
+        mul=num1*num2;
+        div=num1/num2;
+        rem=num1%num2;
+        
+        document.write("sum = "+sum+"</br>");
+        document.write("subtraction = "+sub+"</br>");
+        document.write("multiply = "+mul+"</br>");
+        document.write("divided = "+div+"</br>");
+        document.write("remainder = "+rem+"</br></br>");
+
+        document.write(num1 + " + " + num2 + " = " + sum + "</br>");
+        document.write(num1 + " - " + num2 + " = " + sub + "</br>");
+        document.write(num1 + " x " + num2 + " = " + mul + "</br>");
+        document.write(num1 + " / " + num2 + " = " + div + "</br>");
+        document.write(num1 + " % " + num2 + " = " + rem + "</br>");
     </script>
 </body>
 </html>
