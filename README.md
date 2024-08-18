@@ -1764,3 +1764,258 @@ function prev(){
         imageLink.src = photos[count];
     }
 }
+```
+### add style remove style
+```html
+<body>
+    <p class="para-style">Bangladesh is small country</p>
+    <button onclick="styleAdd()">Add Style</button>
+    <button onclick="styleRemove()">Remove Style</button>
+    <script src="index.js"></script>
+</body>
+</html>
+```
+
+
+```js
+var textTag = document.querySelector("p");
+
+function styleAdd(){
+    textTag.style.color="red";
+}
+function styleremove(){
+
+}
+```
+### forEach
+```js
+var numbers = [2,4,5,3,8];
+console.log(numbers);
+numbers.forEach(function(x,index,array1){
+    array1[index]= x+5;
+});
+console.log(numbers);
+```
+### Map
+
+```js
+var numbers = [2,5,3,8,6];
+
+var squareNumber = numbers.map(function(x){
+    return x*x;
+});
+console.log(squareNumber);
+```
+<img src="./images/foreachmap.png"/>
+
+### bigger then 10
+
+```js
+var numbers= [5,10,30,50,37,89];
+var bigNumber = numbers.filter(function(x){
+    return x>10;
+});
+console.log(bigNumber);
+```
+
+### for of and for in
+
+```js
+let name = ["ali","khani","dhani"];
+
+for(let names of name)
+    {
+        console.log(names);
+    }
+
+let nam = {
+    id: 18102041,
+    name: "abu ubaida",
+    age: 53
+}
+for(let na in nam)
+    {
+        console.log(`${na}:${nam[na]}`);
+    }
+```
+### For Each
+
+```js
+var numbs = [10,20,20,30,50];
+numbs.forEach(numHandler);
+
+function numHandler(x){
+    console.log(x);
+}
+// similar shortcut
+var numbs = [10,20,20,30,50];
+numbs.forEach(function(x){
+    console.log(x);
+});
+// push number
+var numbs = [10,20,20,30,50];
+squareNumber = []
+numbs.forEach(function(x){
+    squareNumber.push(x*x);
+});
+console.log(squareNumber)
+```
+
+### for each loop increase the same array
+
+```js
+var numbers = [10,20,30,40,50];
+console.log(numbers);
+numbers.forEach(function(x,index,arr){
+    arr[index] = x+5;
+});
+console.log(numbers);
+```
+### Map
+
+```js
+var numbers = [10,20,30,50,60];
+var squareNumbers = numbers.map(function(x){
+    return x*x;
+});
+console.log(squareNumbers);
+```
+### arrow filter map for loop
+
+```js
+var studentsInfo = [
+    {
+        name: "Ali Hamza",
+        id:1,
+        cgpa: 2.32
+    },
+    {
+        name: "Kashab Rahman",
+        id: 2,
+        cgpa: 3.32
+    },
+    {
+        name: "Rafsan Khan",
+        id: 3,
+        cgpa: 4.22
+    },
+    {
+        name: "Dipraaj Sareng",
+        id: 4,
+        cgpa: 1.33
+    }
+]
+function outPut(){
+    return studentsInfo.filter(function(x){
+        return x.cgpa > 3;
+    }).map(function(y){
+        return y.name;
+    });
+
+}
+console.log(outPut());
+```
+similar
+```js
+const studentDetails = () =>{
+    return studentsInfo.filter((x)=> x.cgpa > 3).map((y)=> y.name);
+}
+console.log(studentDetails());
+```
+<img src="./images/arrow.png"/>
+
+### swap
+
+```js
+let a = 2, b = 3;
+[a , b] = [b , a];
+console.log(a);
+console.log(b);
+
+// old style
+let temp;
+temp = a;
+a = b;
+b = temp;
+```
+### distruct object
+
+```js
+var studentInfo = {
+    name: "Hamza Ali",
+    id: 29,
+    cgpa:4.21
+}
+console.log(studentInfo.name);
+console.log(studentInfo.id);
+console.log(studentInfo.cgpa);
+
+const {name,id,cgpa}=studentInfo;
+
+console.log(name);
+console.log(id);
+console.log(cgpa);
+```
+
+### distract nested object
+
+```js
+let studentInfo = {
+    name: "Ali banat"
+    id: 32,
+    cgpa: 3.21,
+    language:{
+        native: 'Bangla',
+        biginner: 'English'
+    }
+}
+console.log(studentInfo.name);
+console.log(studentInfo.language);
+// shortcut
+const {name,language} = studentInfo;
+console.log(name);
+console.log(language); // nested inside it more info
+// nested shortcut
+const {native,language} = language;
+console.log(native);
+console.log(biginner);
+```
+
+### distruct function
+
+```js
+let studentBio = (data) =>{
+    console.log(`Name : ${data.name}, id : ${data.id}, college : ${data.college}`);
+}
+let data = {
+    name: "Abu Ubaida",
+    id: 213201,
+    college: "Kashempur High School"
+}
+studentBio(data);
+```
+### alternative shortcut function distruct
+```js
+let studentBio = ({name,id,college}) =>{
+    console.log(`Name : ${name}, id : ${id}, college : ${college}`);
+}
+let data = {
+    name: "Abu Ubaida",
+    id: 213201,
+    college: "Kashempur High School"
+}
+studentBio(data);
+```
+### startsWith endsWith includes
+
+```js
+let message = "prince of persia";
+console.log(message.startsWith("of", 7));
+
+let message = "prince of persia";
+console.log(message.endsWith("persia", 16));
+
+let message = "prince of persia";
+console.log(message.includes("ince"));
+```
+
